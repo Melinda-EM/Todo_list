@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>My_Todo_List</title>
+</head>
+
+
+<body>
+
+    <div class="title">
+        <h1>My Todo List</h1>
+    </div>
+
+    <div class="add_more">
+        <label for="add">Ajouter une tâche à faire (tu ferais mieux de la noter avant d'oublier et te fail encore sur un projet)</label>
+        <input type="text" id="added" minlength="10" maxlength="50" placeholder="Ajouter une tâche">
+        <button onclick="add()" class="send">Envoyer</button>
+    </div>
+
+    <div class="fieldset">
+        <fieldset id="field">
+            <legend>A Faire</legend>
+            <div>
+                <input type="checkbox" name="todo" value="mvc">
+                <label>Se renseigner sur l'architecture MVC</label>
+            </div>
+            <div>
+                <input type="checkbox" name="todo" value="ajax">
+                <label>Se renseigner que la requête Ajax JQuery</label>
+            </div>
+            <div>
+                <input type="checkbox" name="todo" value="bdd">
+                <label>Faire les relations dans la base de données</label>
+            </div>
+            <div>
+                <input type="checkbox" name="todo" value="site">
+                <label>Designer le site</label>
+            </div>
+            <div>
+                <input type="checkbox" name="todo" value="chat">
+                <label>Implémenter un chat</label>
+            </div>
+            <div>
+                <input type="checkbox" name="todo" value="tester">
+                <label>Tester le code afin de corriger les erreurs</label>
+            </div>
+            <div>
+                <input type="checkbox" name="todo" value="pls">
+                <label>Se retrouver en PLS sous le bureau</label>
+            </div>
+            <div>
+                <input type="checkbox" name="todo" value="pauses">
+                <label>Faire des pauses afin de ne pas disjoncter</label>
+            </div>
+            <div>
+                <input type="checkbox" name="todo" value="données">
+                <label>Trouver l'inspiration pour les données de la BDD</label>
+            </div>
+        </fieldset>
+
+
+        <fieldset id="field2">
+            <legend>Finie</legend>
+            <div>
+                <input type="checkbox" name="done">
+                <label>Avancer sur le Bootstrap</label>
+            </div>
+            <div>
+                <input type="checkbox" name="done">
+                <label>Créer une base de donnée</label>
+            </div>
+            <div>
+                <input type="checkbox" name="done">
+                <label>Ajouter des réferences de jeux vidéos (nom de personnages connus)</label>
+            </div>
+            <div>
+                <input type="checkbox" name="done">
+                <label>Déprimer vu la difficulté du projet</label>
+            </div>
+            <div>
+                <input type="checkbox" name="done">
+                <label>S'aérer le cerveau</label>
+            </div>
+            <div>
+                <input type="checkbox" name="done">
+                <label>Ajouter des hobby/sport pour les filtres de recherche</label>
+            </div>
+        </fieldset>
+    </div>
+
+
+    <script type="text/javascript" src="/js/my_todo_list.js"></script>
+
+</body>
+
+</html>
